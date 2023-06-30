@@ -9,6 +9,12 @@ const palette: PaletteOptions = {
     main: '#151515',
     light: '#242424',
   },
+  success: {
+    main: '#4EE1A0',
+  },
+  error: {
+    main: '#FF6F5B',
+  },
 };
 
 export default palette;

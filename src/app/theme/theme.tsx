@@ -31,12 +31,21 @@ const theme = createTheme({
       defaultProps: {
         color: 'primary.light',
       },
+      styleOverrides: {
+        root: {
+          '&.MuiTypography-body1': {
+            color: palette.primary.main,
+          },
+        },
+      },
     },
     MuiButton: {
       styleOverrides: {
         root: {
+          width: 'fit-content',
+          borderRadius: 0,
           textTransform: 'none',
-          borderBottom: '3px solid #4EE1A0',
+          borderBottom: `0.125rem solid ${palette.success.main}`,
         },
       },
     },
