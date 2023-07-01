@@ -16,12 +16,17 @@ const typography = {
   h3: {
     fontWeight: 700,
     fontSize: '1.5rem',
-    lineHeight: '2rem',
+    lineHeight: '2.5rem',
   },
-  body: {
+  body1: {
     fontWeight: 500,
     fontSize: '1.125rem',
     lineHeight: '1.75rem',
+  },
+  body2: {
+    fontWeight: 500,
+    fontSize: '1rem',
+    lineHeight: '1.625rem',
   },
   button: {
     fontWeight: 700,
