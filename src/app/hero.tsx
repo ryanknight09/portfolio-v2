@@ -7,25 +7,37 @@ import {
   styled,
 } from '@mui/material';
 
-import { ReactComponent as GithubIcon } from '../../assets/images/icon-github.svg';
-import { ReactComponent as LinkedInIcon } from '../../assets/images/icon-linkedin.svg';
-import ProfileImage from '../../assets/images/image-profile-desktop.webp';
+import { ReactComponent as GithubIcon } from '../assets/images/icon-github.svg';
+import { ReactComponent as LinkedInIcon } from '../assets/images/icon-linkedin.svg';
+import ProfileImage from '../assets/images/image-profile-desktop.jpg';
 
 const Hero = () => (
   <HeroWrapper>
     <HeadingContent>
       <Caption>ryanknight</Caption>
       <Icons>
-        <IconButton color="primary">
-          <LinkedInIcon />
-        </IconButton>
-        <IconButton color="primary">
-          <GithubIcon />
-        </IconButton>
+        <a
+          href={'https://www.linkedin.com/in/ryan-knight09'}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <IconButton>
+            <LinkedInIcon />
+          </IconButton>
+        </a>
+        <a
+          href={'https://github.com/ryanknight09'}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <IconButton>
+            <GithubIcon />
+          </IconButton>
+        </a>
       </Icons>
     </HeadingContent>
     <ImageWrapper>
-      <img src={ProfileImage} alt="profile" />
+      <Image src={ProfileImage} alt="profile" />
     </ImageWrapper>
     <Content>
       <Greeting>
@@ -71,6 +83,11 @@ const Content = styled(Stack)(({ theme }) => ({
   marginTop: '2.5rem',
   [theme.breakpoints.up(760)]: {
     justifyContent: 'center',
+    gridColumn: '1/6',
+    gridRow: overLapGrid,
+  },
+  [theme.breakpoints.up(900)]: {
+    justifyContent: 'center',
     gridColumn: '1/7',
     gridRow: overLapGrid,
   },
@@ -79,9 +96,6 @@ const Content = styled(Stack)(({ theme }) => ({
 const Icons = styled(Box)(({ theme }) => ({
   display: 'flex',
   gap: '2rem',
-  [theme.breakpoints.up(760)]: {
-    marginRight: '1rem',
-  },
 }));
 
 const Caption = styled(Typography)(({ theme }) => ({
@@ -139,23 +153,28 @@ const ContactMe = styled(Button)(({ theme }) => ({
 }));
 
 const ImageWrapper = styled(Stack)(({ theme }) => ({
-  backgroundColor: '#242424',
   gridColumn: '1/-1',
   gridRow: overLapGrid,
   margin: '0 auto',
   height: '24rem',
   justifyContent: 'flex-end',
-  boxShadow: `0px 0px 1px ${theme.palette.grey[800]}, 0px 10px 22px 0px ${theme.palette.grey[800]}`,
   zIndex: 1,
-  width: '12rem',
-  [theme.breakpoints.up(500)]: {
-    width: '15rem',
-    height: '28rem',
-  },
+  width: '11rem',
   [theme.breakpoints.up(760)]: {
+    gridColumn: '5/-1',
+    margin: '0 0 0 auto',
+    width: '18rem',
+    height: '34.5rem',
+  },
+  [theme.breakpoints.up(900)]: {
     gridColumn: '5/-1',
     margin: '0 0 0 auto',
     width: '20rem',
     height: '37.5rem',
   },
+}));
+
+const Image = styled('img')(({ theme }) => ({
+  boxShadow: `0px 0px 1px ${theme.palette.secondary.main}, 0px 4px 16px 0px ${theme.palette.grey[600]}`,
+  borderRadius: '.25rem',
 }));
