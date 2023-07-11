@@ -1,5 +1,6 @@
 import { Box, Container, Divider, Stack, styled } from '@mui/material';
 
+import { Experience } from './experience';
 import Hero from './hero';
 import { Projects } from './projects';
 import Theme from './theme/theme';
@@ -11,6 +12,8 @@ export function App() {
         <SxContainer>
           <Stack gap="4.5rem">
             <Hero />
+            <SxDivider />
+            <Experience />
             <SxDivider />
             <Projects />
           </Stack>
