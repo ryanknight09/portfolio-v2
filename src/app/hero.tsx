@@ -109,6 +109,7 @@ const Greeting = styled(Typography)(({ theme }) => ({
   fontSize: '2.5rem',
   textAlign: 'center',
   span: {
+    color: theme.palette.primary.light,
     borderBottom: `.25rem solid ${theme.palette.success.main}`,
   },
   [theme.breakpoints.up(760)]: {
@@ -129,6 +130,7 @@ const Greeting = styled(Typography)(({ theme }) => ({
 }));
 
 const About = styled(Typography)(({ theme }) => ({
+  color: theme.palette.primary.main,
   ...theme.typography.body2,
   marginTop: '1.25rem',
   textAlign: 'center',

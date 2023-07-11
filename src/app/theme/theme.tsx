@@ -31,13 +31,6 @@ const theme = createTheme({
       defaultProps: {
         color: 'primary.light',
       },
-      styleOverrides: {
-        root: {
-          '&.MuiTypography-body1': {
-            color: palette.primary.main,
-          },
-        },
-      },
     },
     MuiButton: {
       styleOverrides: {

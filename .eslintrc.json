@@ -38,8 +38,8 @@
             "pathGroups": [
               {
                 "group": "external",
-                "pattern": "react",
-                "position": "before"
+                "pattern": "react"
+                // "position": "before"
               }
             ],
             "pathGroupsExcludedImportTypes": ["react"]
