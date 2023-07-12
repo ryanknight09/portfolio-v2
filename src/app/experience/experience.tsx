@@ -9,7 +9,7 @@ export const Experience = () => (
 
     <Stack gap="2rem" width="100%" alignItems={'flex-end'}>
       {workExperience.map((item) => (
-        <ExperienceCard {...item} />
+        <ExperienceCard key={item.company} {...item} />
       ))}
     </Stack>
   </Stack>

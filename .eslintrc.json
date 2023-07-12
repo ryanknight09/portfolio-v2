@@ -30,16 +30,15 @@
           "error",
           {
             "alphabetize": {
-              "caseInsensitive": true,
-              "order": "asc"
+              "caseInsensitive": true
             },
-            "groups": ["builtin", "external", "internal"],
+            "groups": ["external", "internal", "builtin"],
             "newlines-between": "always",
             "pathGroups": [
               {
                 "group": "external",
-                "pattern": "react"
-                // "position": "before"
+                "pattern": "react",
+                "position": "before"
               }
             ],
             "pathGroupsExcludedImportTypes": ["react"]

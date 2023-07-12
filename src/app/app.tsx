@@ -1,8 +1,8 @@
 import { Box, Container, Divider, Stack, styled } from '@mui/material';
 
-import { Experience } from './experience';
+import { Experience } from './experience/experience';
 import Hero from './hero';
-import { Projects } from './projects';
+import { Projects } from './projects/projects';
 import Theme from './theme/theme';
 
 export function App() {
@@ -33,7 +33,7 @@ const AppWrapper = styled(Box)(({ theme }) => ({
 
 const SxContainer = styled(Container)(() => ({
   height: '100%',
-  paddingBottom: '1.25rem',
+  paddingBottom: '2rem',
   overflowY: 'scroll',
 }));
 

@@ -1,22 +1,15 @@
 import { Box, Stack, Typography, styled } from '@mui/material';
 
 import { ProjectCard } from './projectCard';
-// import Project2 from '../assets/images/project-2.webp';
-// import Project3 from '../assets/images/project-3.webp';
-// import Project4 from '../assets/images/project-4.webp';
-// import Project5 from '../assets/images/project-5.webp';
-// import Project6 from '../assets/images/project-6.webp';
+import data from './projectsData';
 
 export const Projects = () => (
   <Stack gap="1.5rem">
     <Title>Projects</Title>
     <Grid>
-      <ProjectCard />
-      <ProjectCard />
-      <ProjectCard />
-      <ProjectCard />
-      <ProjectCard />
-      <ProjectCard />
+      {data.map((project) => (
+        <ProjectCard key={project.name} {...project} />
+      ))}
     </Grid>
   </Stack>
 );
@@ -24,7 +17,7 @@ export const Projects = () => (
 const Grid = styled(Box)(() => ({
   width: '100%',
   display: 'grid',
-  gap: '1rem',
+  gap: '1.75rem',
   gridTemplateColumns: 'repeat(auto-fit, minmax(20rem, 1fr));',
 }));
 
