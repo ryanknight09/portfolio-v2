@@ -2,7 +2,6 @@ const globalStyles = {
   '::-webkit-scrollbar': {
     width: '6px',
     height: '16px',
-    display: 'none',
   },
   '::-webkit-scrollbar-thumb': {
     backgroundColor: '#535353',

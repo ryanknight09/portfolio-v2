@@ -4,9 +4,8 @@ import workExperience from './exp';
 import { ExperienceCard } from './experienceCard';
 
 export const Experience = () => (
-  <Stack gap="1.5rem" sx={{ position: 'relative' }}>
-    <Title>Places I'v Worked</Title>
-
+  <Stack gap="1.5rem">
+    <Title>Experience</Title>
     <Stack gap="2rem" width="100%" alignItems={'flex-end'}>
       {workExperience.map((item) => (
         <ExperienceCard key={item.company} {...item} />

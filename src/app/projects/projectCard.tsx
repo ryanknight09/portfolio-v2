@@ -1,10 +1,6 @@
 import LaunchRoundedIcon from '@mui/icons-material/LaunchRounded';
 import {
   Box,
-  Card,
-  CardActions,
-  CardContent,
-  CardMedia,
   Chip,
   IconButton,
   Stack,
@@ -22,58 +18,89 @@ export const ProjectCard = ({
   githubUrl,
   hostedUrl,
   img,
+  note,
 }: Project) => (
-  <SxCard>
-    <CardMedia sx={{ height: '16rem' }} image={img} title="green iguana" />
-    <CardContent>
-      <Stack gap=".5rem">
-        <Typography gutterBottom variant="h6" component="div">
+  <Grid>
+    <Image src={img} />
+    <Stack gap="1rem">
+      <CompanyContainer>
+        <Typography
+          variant="body1"
+          color="primary.light"
+          sx={{ fontWeight: 700 }}
+        >
           {name}
         </Typography>
-        <ChipContainer>
-          {stack.map((item) => (
-            <Chip
-              variant="outlined"
-              key={item}
-              label={item}
-              size="small"
-              color="success"
-            />
-          ))}
-        </ChipContainer>
-        {description && (
-          <Typography
-            variant="body2"
-            color="primary.main"
-            sx={{ fontSize: '.875rem' }}
-          >
-            {description}
-          </Typography>
-        )}
-      </Stack>
-    </CardContent>
-    <CardActions sx={{ marginTop: 'auto' }}>
-      <a href={githubUrl} target="_blank" rel="noopener noreferrer">
-        <IconButton>
-          <GithubIcon />
-        </IconButton>
-      </a>
-      {hostedUrl && (
-        <a href={hostedUrl} target="_blank" rel="noopener noreferrer">
-          <IconButton color="primary">
-            <LaunchRoundedIcon />
+        <a href={githubUrl} target="_blank" rel="noopener noreferrer">
+          <IconButton size="small">
+            <GithubIcon fontSize="small" />
           </IconButton>
         </a>
+        {hostedUrl && (
+          <a href={hostedUrl} target="_blank" rel="noopener noreferrer">
+            <IconButton color="primary" size="small">
+              <LaunchRoundedIcon fontSize="small" />
+            </IconButton>
+          </a>
+        )}
+      </CompanyContainer>
+      <Typography
+        variant="body2"
+        color="primary.main"
+        sx={{ fontSize: '.875rem' }}
+      >
+        {description}
+      </Typography>
+      {note && (
+        <Typography
+          variant="body2"
+          color="info.main"
+          sx={{ fontSize: '.875rem' }}
+        >
+          {note}
+        </Typography>
       )}
-    </CardActions>
-  </SxCard>
+      <ChipContainer>
+        {stack.map((item) => (
+          <Chip
+            variant="outlined"
+            key={item}
+            label={item}
+            size="small"
+            color="primary"
+          />
+        ))}
+      </ChipContainer>
+    </Stack>
+  </Grid>
 );
 
-const SxCard = styled(Card)(({ theme }) => ({
-  backgroundColor: theme.palette.secondary.light,
-  boxShadow: `0px 0px 1px ${theme.palette.secondary.main}, 0px 2px 8px 0px black`,
+const Grid = styled(Box)(({ theme }) => ({
+  maxWidth: '700px',
+  display: 'grid',
+  gap: '3rem',
+  gridTemplateColumns: '1fr',
+  gridTemplateRows: '1fr',
+  [theme.breakpoints.up(760)]: {
+    gridTemplateColumns: '1fr 2.5fr',
+    gridTemplateRows: 'unset',
+  },
+}));
+
+const CompanyContainer = styled(Box)(() => ({
   display: 'flex',
-  flexDirection: 'column',
+  gap: '.5rem',
+  alignItems: 'center',
+}));
+
+const Image = styled('img')(({ theme }) => ({
+  gridRow: '-1/2',
+  marginTop: '.25rem',
+  objectFit: 'contain',
+  width: '12rem',
+  border: `2px solid ${theme.palette.secondary.light}`,
+  borderRadius: '.5rem',
+  boxShadow: `0px 0px 1px ${theme.palette.secondary.light}, 2px 2px 12px 0px black`,
 }));
 
 const ChipContainer = styled(Box)(() => ({
