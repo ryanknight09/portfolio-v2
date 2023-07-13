@@ -10,9 +10,12 @@ import {
 import { ReactComponent as GithubIcon } from '../assets/images/icon-github.svg';
 import { ReactComponent as LinkedInIcon } from '../assets/images/icon-linkedin.svg';
 import ProfileImage from '../assets/images/image-profile-desktop.jpg';
+import circle from '../assets/images/pattern-circle.svg';
+import rings from '../assets/images/pattern-rings.svg';
 
 const Hero = () => (
   <HeroWrapper>
+    <Rings src={rings} />
     <HeadingContent>
       <Caption>ryanknight</Caption>
       <Icons>
@@ -38,6 +41,7 @@ const Hero = () => (
     </HeadingContent>
     <ImageWrapper>
       <Image src={ProfileImage} alt="profile" />
+      <Circle src={circle} />
     </ImageWrapper>
     <Content>
       <Greeting>
@@ -60,6 +64,35 @@ const HeroWrapper = styled(Box)(({ theme }) => ({
   display: 'grid',
   gridTemplateColumns: 'repeat(9, 1fr)',
   width: '100%',
+  position: 'relative',
+}));
+
+const Circle = styled('img')(({ theme }) => ({
+  position: 'absolute',
+  bottom: '-4rem',
+  visibility: 'hidden',
+  [theme.breakpoints.up(760)]: {
+    right: '-4rem',
+    visibility: 'visible',
+  },
+  [theme.breakpoints.up(860)]: {
+    left: '-4rem',
+    bottom: '5rem',
+    visibility: 'visible',
+  },
+}));
+
+const Rings = styled('img')(({ theme }) => ({
+  position: 'absolute',
+  top: '7rem',
+  left: '-22rem',
+  zIndex: 2,
+  [theme.breakpoints.up(715)]: {
+    left: '-15rem',
+  },
+  [theme.breakpoints.up(760)]: {
+    left: '-14rem',
+  },
 }));
 
 const HeadingContent = styled(Stack)(({ theme }) => ({
@@ -155,6 +188,7 @@ const ContactMe = styled(Button)(({ theme }) => ({
 }));
 
 const ImageWrapper = styled(Stack)(({ theme }) => ({
+  position: 'relative',
   gridColumn: '1/-1',
   gridRow: overLapGrid,
   margin: '0 auto',
