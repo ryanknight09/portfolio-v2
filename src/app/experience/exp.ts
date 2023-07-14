@@ -32,7 +32,7 @@ const data: Experience[] = [
     date: '2023',
     company: 'Quantum IR',
     companyUrl: 'https://www.quantumir.com',
-    role: 'Project Lead (Contractor)',
+    role: 'Project Lead',
     about: `Converted old jQuery code base to a React / Electron desktop application, and simplified the 
             data fetching layer with abstractions and patterns for better maintainability. Project lead for a three 
             person dev team building a new cloud based analytics application hosted with AWS infrastructure.`,
@@ -66,7 +66,7 @@ const data: Experience[] = [
   },
   {
     date: 'Jun 2019 - Aug 2021',
-    company: 'Storage Craft (now arcserve)',
+    company: 'Storage Craft (arcserve)',
     companyUrl: 'https://www.arcserve.com',
     role: 'Frontend Developer',
     about: `Fixed critical bugs in our support app wich allowed for more customer 
