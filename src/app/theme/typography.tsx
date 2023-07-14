@@ -1,8 +1,5 @@
 const typography = {
-  typography: {
-    fontFamily: 'Space Grotesk',
-    color: '#FFFFFF',
-  },
+  fontFamily: 'Space Grotesk',
   h1: {
     fontWeight: 700,
     fontSize: '5.5rem',
