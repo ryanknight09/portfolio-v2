@@ -97,7 +97,7 @@ const Image = styled('img')(({ theme }) => ({
   gridRow: '-1/2',
   marginTop: '.25rem',
   objectFit: 'contain',
-  width: '12rem',
+  width: '18rem',
   border: `2px solid ${theme.palette.secondary.light}`,
   borderRadius: '.5rem',
   boxShadow: `0px 0px 1px ${theme.palette.secondary.light}, 2px 2px 12px 0px black`,

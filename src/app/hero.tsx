@@ -49,7 +49,9 @@ const Hero = () => (
       </Greeting>
       <About>
         Based in Spokane Washington, I’m a front-end developer passionate about
-        building accessible web apps that users love.
+        building web apps that users love. When I'm not coding, you can usually
+        find me making music. I love exploring new ways to combine my technical
+        skills with my creativity.
       </About>
     </Content>
     <ContactMe>Contact Me</ContactMe>
