@@ -36,7 +36,7 @@ const data: Experience[] = [
     about: `Developed a chat gpt enabled news feed fed by web sockets for real time market watch and analysis summaries of the articles. 
             Created authentication flows utilizing react server components and Next.js 14. 
             Created new features with a Sanity content management system for marketing and 
-product stakeholders`,
+            product stakeholders.`,
     stack: [
       'Typescrict',
       'Javascript',
