@@ -9,6 +9,47 @@ export type Experience = {
 
 const data: Experience[] = [
   {
+    date: 'Dec 2022 - Present',
+    company: 'Quantum IR',
+    companyUrl: 'https://www.quantumir.com',
+    role: 'Front End Lead (consultant role)',
+    about: `Project lead for a three person dev team building a new cloud based analytics application hosted with AWS infrastructure. 
+            Converted old jQuery code base to a React / Electron desktop application, and simplified the 
+            data fetching layer with abstractions and patterns for better maintainability.`,
+    stack: [
+      'Typescrict',
+      'Javascript',
+      'React',
+      'Apollo GraphQl',
+      'Emotion JS',
+      'Material UI V5',
+      'AWS Amplify',
+      'AWS Real Time DB',
+      'AWS Lambda / App Sync',
+    ],
+  },
+  {
+    date: 'Aug 2023 - Feb 2024',
+    company: 'Polygon.io',
+    companyUrl: 'https://polygon.io',
+    role: 'Sr. Frontend Developer',
+    about: `Developed a chat gpt enabled news feed fed by web sockets for real time market watch and analysis summaries of the articles. 
+            Created authentication flows utilizing react server components and Next.js 14. 
+            Created new features with a Sanity content management system for marketing and 
+product stakeholders`,
+    stack: [
+      'Typescrict',
+      'Javascript',
+      'React',
+      'Apollo GraphQl',
+      'Emotion JS',
+      'Material UI V5',
+      'AWS Amplify',
+      'AWS Real Time DB',
+      'AWS Lambda / App Sync',
+    ],
+  },
+  {
     date: 'April 2022 — Present',
     company: 'Geodeip IP',
     companyUrl: 'https://www.geodeip.com',
@@ -26,26 +67,6 @@ const data: Experience[] = [
       'Apollo GraphQl',
       'Emotion JS',
       'Material UI V5',
-    ],
-  },
-  {
-    date: '2023',
-    company: 'Quantum IR',
-    companyUrl: 'https://www.quantumir.com',
-    role: 'Project Lead',
-    about: `Converted old jQuery code base to a React / Electron desktop application, and simplified the 
-            data fetching layer with abstractions and patterns for better maintainability. Project lead for a three 
-            person dev team building a new cloud based analytics application hosted with AWS infrastructure.`,
-    stack: [
-      'Typescrict',
-      'Javascript',
-      'React',
-      'Apollo GraphQl',
-      'Emotion JS',
-      'Material UI V5',
-      'AWS Amplify',
-      'AWS Real Time DB',
-      'AWS Lambda / App Sync',
     ],
   },
   {

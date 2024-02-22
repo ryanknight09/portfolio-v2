@@ -54,7 +54,7 @@ const Hero = () => (
         skills with my creativity.
       </About>
     </Content>
-    <ContactMe>Contact Me</ContactMe>
+    {/* <ContactMe>Contact Me</ContactMe> */}
   </HeroWrapper>
 );
 

@@ -1,6 +1,5 @@
 import bitcoin from '../../assets/images/projects/btc.png';
 import dictionary from '../../assets/images/projects/dictionary.png';
-import portfolioV1 from '../../assets/images/projects/portfolio.png';
 import spotify from '../../assets/images/projects/spotify/spot1.png';
 
 export type Project = {
@@ -48,14 +47,6 @@ const data: Project[] = [
     ],
     githubUrl: 'https://github.com/ryanknight09/spotify',
     img: spotify,
-  },
-  {
-    name: 'Portfolio V1.0',
-    description: 'My old and first portfolio app.',
-    stack: ['React', 'React-Router', ' HashLink', 'Styled-Components'],
-    githubUrl: 'https://github.com/ryanknight09/portfolio',
-    hostedUrl: 'https://ryan-knight.web.app',
-    img: portfolioV1,
   },
   {
     name: 'Bitcoin Mining Game',
