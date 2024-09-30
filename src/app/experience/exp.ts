@@ -12,10 +12,12 @@ const data: Experience[] = [
     date: 'Dec 2022 - Present',
     company: 'Quantum IR',
     companyUrl: 'https://www.quantumir.com',
-    role: 'Front End Lead (consultant role)',
-    about: `Project lead for a three person dev team building a new cloud based analytics application hosted with AWS infrastructure. 
-            Converted old jQuery code base to a React / Electron desktop application, and simplified the 
-            data fetching layer with abstractions and patterns for better maintainability.`,
+    role: 'Engineering Lead',
+    about: `As a Software Engineering Lead, I am responsible for building and leading a cross-functional team to revamp, scale, and deploy a critical on-site application. 
+            I spearheaded the development of a new cloud-based analytics platform leveraging AWS services. 
+            This involved architecting a scalable solution for data ingestion, storage, and processing to provide real-time insights for internal and external stakeholders.
+            I also led the overhaul of the marketing pages by transitioning them into a Next.js-based application, focusing on SEO optimization and front-end performance. This not only improved the site’s ranking but also enhanced load times and user experience. 
+            Furthermore, I oversaw the seamless integration of the cloud analytics application into the Next.js frontend, ensuring a cohesive user experience across the board.`,
     stack: [
       'Typescrict',
       'Javascript',

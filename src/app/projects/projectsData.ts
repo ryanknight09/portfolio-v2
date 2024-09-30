@@ -1,6 +1,7 @@
 import bitcoin from '../../assets/images/projects/btc.png';
 import dictionary from '../../assets/images/projects/dictionary.png';
 import spotify from '../../assets/images/projects/spotify/spot1.png';
+import spark from '../../assets/images/projects/spark.png';
 
 export type Project = {
   name: string;
@@ -14,9 +15,26 @@ export type Project = {
 
 const data: Project[] = [
   {
+    name: 'Spark Credit',
+    description:
+      'Co-founder of Spark credit, an application aiming to bring lending to small medical clinics to increase revenue and customer acquisition.',
+    stack: [
+      'Next.js',
+      'tRPC',
+      'Tailwind',
+      'Typescript',
+      'Shad-cn',
+      'Vercel',
+      'Clerk Auth',
+    ],
+    githubUrl: '',
+    hostedUrl: 'https://www.sparkcreditusa.com/',
+    img: spark,
+  },
+  {
     name: 'Dictionary',
     description:
-      'A searchable dictionary. This showcases input debouncing, light/dark mode theming, dynamic font selection and responsivness.',
+      'A searchable dictionary. This showcases input debouncing, light/dark mode theming, dynamic font selection and responsiveness.',
     stack: [
       'React',
       'vite',
@@ -34,7 +52,7 @@ const data: Project[] = [
     name: 'Spotify Clone',
     description:
       'A full clone of the Spotify application with Oauth. Wide open Api use is subject to Spotify approval.',
-    note: '* Unable to host due to spotify attribution. Code is availbe on my github, I would love to show it off in a meetup!',
+    note: '* Unable to host due to spotify attribution. Code is available on my github, I would love to show it off in a meetup!',
     stack: [
       'React',
       'vite',
