@@ -15,20 +15,10 @@ const data: Experience[] = [
     role: 'Engineering Lead',
     about: `As a Software Engineering Lead, I am responsible for building and leading a cross-functional team to revamp, scale, and deploy a critical on-site application. 
             I spearheaded the development of a new cloud-based analytics platform leveraging AWS services. 
-            This involved architecting a scalable solution for data ingestion, storage, and processing to provide real-time insights for internal and external stakeholders.
+            This involved designing a scalable solution for data ingestion, storage, and processing to provide real-time insights for internal and external stakeholders.
             I also led the overhaul of the marketing pages by transitioning them into a Next.js-based application, focusing on SEO optimization and front-end performance. This not only improved the site’s ranking but also enhanced load times and user experience. 
             Furthermore, I oversaw the seamless integration of the cloud analytics application into the Next.js frontend, ensuring a cohesive user experience across the board.`,
-    stack: [
-      'Typescrict',
-      'Javascript',
-      'React',
-      'Apollo GraphQl',
-      'Emotion JS',
-      'Material UI V5',
-      'AWS Amplify',
-      'AWS Real Time DB',
-      'AWS Lambda / App Sync',
-    ],
+    stack: ['Next.js', 'React-Query', 'Tailwind', 'AWS', 'AWS'],
   },
   {
     date: 'Aug 2023 - Feb 2024',
@@ -40,7 +30,7 @@ const data: Experience[] = [
             Created new features with a Sanity content management system for marketing and 
             product stakeholders.`,
     stack: [
-      'Typescrict',
+      'Typescript',
       'Javascript',
       'React',
       'Apollo GraphQl',
@@ -63,7 +53,7 @@ const data: Experience[] = [
         app theme, repository architecture, and domain design. Additionally, I
         played a role in solidifying the direction of product features.`,
     stack: [
-      'Typescrict',
+      'Typescript',
       'Javascript',
       'React',
       'Apollo GraphQl',
@@ -92,7 +82,7 @@ const data: Experience[] = [
     company: 'Storage Craft (arcserve)',
     companyUrl: 'https://www.arcserve.com',
     role: 'Frontend Developer',
-    about: `Fixed critical bugs in our support app wich allowed for more customer 
+    about: `Fixed critical bugs in our support app which allowed for more customer 
         support throughput, converted Sencha JS app to React, 
         implemented OAuth, developed a GraphQL server stack, and 
         wrote unit tests for code quality.`,
@@ -112,7 +102,7 @@ const data: Experience[] = [
     companyUrl: 'https://www.exactsciences.com',
     role: 'Intern',
     about: `This is where my career began. I wrote a ton java and got my feet wet in 
-          the industry writting software. I learned about systems, unit testing, team collaboration and 
+          the industry writing software. I learned about systems, unit testing, team collaboration and 
           other software basics.`,
     stack: ['Javascript', 'Java', 'Postgress DB'],
   },

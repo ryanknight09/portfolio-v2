@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "ryan-knight-v2",
     "public": "dist/portfolio-v2",
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "rewrites": [
